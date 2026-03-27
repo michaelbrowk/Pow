@@ -51,7 +51,7 @@ internal struct ShineModifier: ViewModifier, Animatable {
 
                     LinearGradient(
                         colors: stride(from: 0.0, through: CGFloat.pi, by: 0.2).map {
-                            .white.opacity(pow(sin($0), 2) * 0.8 * base)
+                            .white.opacity(pow(sin(Double($0)), 2) * 0.8 * base)
                         },
                         startPoint: .leading,
                         endPoint: .trailing
