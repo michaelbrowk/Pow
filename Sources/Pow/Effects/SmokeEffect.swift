@@ -154,8 +154,8 @@ private struct SmokeLayerView: ViewRepresentable {
             cell.scaleRange = size.width / 1000.0
             cell.scaleSpeed = size.width / -2000.0
 
-            cell.emissionRange = .pi * 0.1
-            cell.emissionLongitude = .pi * -0.5
+            cell.emissionRange = CGFloat.pi * 0.1
+            cell.emissionLongitude = CGFloat.pi * -0.5
 
             cell.contents = particle
 
