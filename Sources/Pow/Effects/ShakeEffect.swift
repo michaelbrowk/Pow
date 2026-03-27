@@ -55,7 +55,7 @@ internal struct ShakeSimulationModifier: ViewModifier, Simulative {
     )
 
     fileprivate var target: CGFloat {
-        16 * sin(2 * CGFloatCGFloat.pi * shakeCount)
+        16 * sin(2 * CGFloat.pi * shakeCount)
     }
 
     private var isSimulationPaused: Bool {

@@ -248,7 +248,7 @@ private struct PulseStrokeAnimationModifier<EffectShape: InsettableShape, Effect
                 let progress = animatableData
                 let x: CGFloat = progress.beat(intensity: 5.0, frequency: 0.5)
                 let nx: CGFloat = x - 0.5
-                let v: CGFloat = sin(CGFloatCGFloat.pi * x)
+                let v: CGFloat = sin(CGFloat.pi * x)
 
                 shape
                     .inset(by: nx * -insetAmount)
@@ -307,7 +307,7 @@ private struct PulseFillAnimationModifier<EffectShape: InsettableShape, EffectSh
 
 private extension CGFloat {
     func beat(intensity: CGFloat = 2.0, frequency: CGFloat = 2.0) -> CGFloat {
-        let v = atan(sin(self * CGFloatCGFloatCGFloat.pi * frequency) * intensity)
+        let v = atan(sin(self * CGFloat.pi * frequency) * intensity)
         return (v + CGFloat.pi / 2.0) / CGFloat.pi
     }
 }
